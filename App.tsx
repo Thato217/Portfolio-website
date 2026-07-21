@@ -4,6 +4,33 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
+  import Button from '@/components/ui/button'
+import Navbar from '@/components/layout/navbar'
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Button />
+    </div>
+  )
+}
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  }
+})
+
+
+export default App
+
   Mail,
   ExternalLink,
   Download,
