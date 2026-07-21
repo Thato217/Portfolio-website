@@ -26,5 +26,4 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
   },
-    "include": ["src/**/*.ts", "src/**/*.tsx,"src/**/.vue"],
   }
